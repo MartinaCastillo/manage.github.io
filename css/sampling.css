@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and default styles */
+
+body {
+    font-family: 'Be Vietnam Pro', sans-serif;
+    font-size: 16px;
+    background: #fafafa;
+    background-color: #FFFFFF;
+    background-image: url(../imagenes/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-position-x: 800px;
+    background-position-y: -300px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Components */
+
+button {
+    border: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin: 5% 10% auto;
+}
+
+h2 {
+    color: #232851;
+}
+
+button {
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    background: #F3603B;
+    box-shadow: 0px 4px 8px rgba(242, 97, 59, 0.5);
+    padding: 10px 35px;
+}
+
+button:hover {
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.25);
+    background-color: rgb(249, 175, 157);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    margin: auto 10%;
+}
+
+header .logo {
+    cursor: pointer;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+
+header nav ul li {
+    padding: 0px 5px;
+    margin: 0px 10px;
+}
+
+header nav ul li a {
+    transition: all 0.3s ease 0s;
+    font-size: 17px;
+    color: rgb(35, 44, 81);
+}
+
+header nav ul li a:hover {
+    color: rgb(209, 209, 209);
+}
+
+header img:last-child {
+    display: none;
+}
+
+
+section.Inicio {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+section.Inicio div.contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-right: 10%;
+}
+
+section.Inicio div.contenido p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+section.Inicio h2.text {
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 66px;
+}
+
+section.mid .midText h2 {
+    font-size: 37px;
+    font-weight: 700;
+    line-height: 41px;
+}
+
+section.mid .midText p {
+    font-size: 16px;
+    line-height: 24px;
+}
+
+@media only screen and (max-width: 375px) {
+    body {
+        background-position-x: 0px;
+        background-position-y: -300px;
+    }
+    /* TODO: Not working oops */
+    section:not(:first-child) {
+        margin: 20% 10% auto;
+    }
+
+    header {
+        margin: auto 5%;
+    }
+
+    header nav ul:not(.active) {
+        display: none;
+    }
+
+    header nav ul li a {
+        font-size: 14px;
+    }
+
+    header button {
+        display: none;
+    }
+
+    header img:last-child {
+        display: block;
+    }
+
+    section.Inicio {
+        /* TODO: Oops */
+        margin: 10% 10% auto;
+        flex-direction: column-reverse;
+    }
+    section.Inicio div.contenido {
+        margin-top: 5%;
+        margin-right: 0px;
+    }
+
+    section.Inicio h2.text {
+        font-size: 34px;
+        line-height: 48px;
+        text-align: center;
+    }
+
+    section.Inicio .contenido p {
+        margin-top: 10%;
+    }
+
+    section.Inicio .contenido div {
+        margin-top: 10%;
+        display: flex;
+        justify-content: center;
+    }
+
+    section.mid .midText h2 {
+        text-align: center;
+    }
+    section.mid .midText p {
+        margin-top: 10%;
+        font-size: 14px;
+    }
+}

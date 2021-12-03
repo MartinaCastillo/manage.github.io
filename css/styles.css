@@ -7,7 +7,9 @@
     padding: 0;
 
 }
+
 body {
+   min-width: 100vw;
    margin: 0%;
    padding: 0%;
    font-family: 'Be Vietnam Pro', sans-serif;
@@ -51,6 +53,8 @@ header {
 .lista_nav li a {
     transition: all 0.3s ease 0s;
     font-size: 17px;
+    color: rgb(35, 44, 81);
+
 }
 
 
@@ -212,7 +216,7 @@ margin: 18px 0px;
     
 }
 
-.name span{
+.name1 span{
     display: flex;
     width: fit-content;
     height: 25px;
@@ -227,14 +231,92 @@ margin: 18px 0px;
     margin: auto;
 
 }
-.name img{
+.name1 img{
     width: 70px;
     display: flex;
     text-align: center;
     margin: auto;
     margin-bottom: 15px;
 }
-.name p{
+.name1 p{
+
+    width: 390px;
+    left: 0px;
+ 
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    color: #B9B9C1;
+    margin: 21px 0px;
+
+
+}
+
+
+.name2 span{
+    display: flex;
+    width: fit-content;
+    height: 25px;
+   
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    align-content: center;
+    color: #3F4868;
+    margin: auto;
+
+}
+.name2 img{
+    width: 70px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.name2 p{
+
+    width: 390px;
+    left: 0px;
+ 
+    font-family: 'Be Vietnam Pro';
+    font-weight: 500;
+    font-size: 16px;
+    align-items: center;
+    text-align: center;
+    color: #B9B9C1;
+    margin: 21px 0px;
+
+
+}
+
+
+.name3 span{
+    display: flex;
+    width: fit-content;
+    height: 25px;
+   
+
+    font-family: 'Be Vietnam Pro';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    align-content: center;
+    color: #3F4868;
+    margin: auto;
+
+}
+.name3 img{
+    width: 70px;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.name3 p{
 
     width: 390px;
     left: 0px;
@@ -410,11 +492,54 @@ form{
 }
 
 @media screen and (max-width: 375px){
-    *{
-        max-width: 375;
+
+
+    body{
+        
+        background-size: 80%;
     }
     .menuHamb {
         display: inline-block;
     }
+
+    .lista_nav{
+        display: none;
+    }
     
+     
+    header {
+        display: flex;
+        align-items: center;
+        padding: auto;
+    }
+
+    .Inicio {
+        flex-direction: column-reverse;
+    }
+
+    .name2, .name3 {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
