@@ -1,4 +1,4 @@
-## Manage
+## Manage 🟠
 
 - Para la realizacion de esta web se tuvieron en cuenta la estricta realizacion de los siguientes puntos:
          - Ver el diseño óptimo para el sitio según el tamaño de la pantalla de su dispositivo 
@@ -13,4 +13,4 @@
          -Pequeñas animaciones
 
 
-##El link del Figma guia [https://www.figma.com/file/3PSyK3KYcmvbwK2OVFjFWm/Nico-Digital?node-id=4%3A2]
+## 🪛 El link del Figma guia [https://www.figma.com/file/3PSyK3KYcmvbwK2OVFjFWm/Nico-Digital?node-id=4%3A2] 
